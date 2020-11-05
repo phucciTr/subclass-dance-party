@@ -1,10 +1,12 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   var aNewDancer = new BlinkyDancer(top, left, timeBetweenSteps);
+  aNewDancer.startDancing();
+  aNewDancer.setPosition(aNewDancer.top, aNewDancer.left);
   return aNewDancer;
 };
 
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
-  var test = makeDancer.call(this, top, left, timeBetweenSteps);
+  Dancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<span class="dancer"></span>');
 };
 
