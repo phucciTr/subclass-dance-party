@@ -1,6 +1,6 @@
 // Creates and returns a new dancer object that can step
 var makeDancer = function(top, left, timeBetweenSteps) {
-  aNewDancer = new Dancer;
+  aNewDancer = new Dancer(top, left, timeBetweenSteps);
   aNewDancer.startDancing();
   aNewDancer.setPosition(aNewDancer.top, aNewDancer.left);
   return aNewDancer;
