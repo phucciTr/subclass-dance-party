@@ -1,0 +1,33 @@
+Dancer Ideas
+  Wander Dancers
+    --Wander aimlessly around the screen, no sharp turns
+    --This can be done with a current angle value, a turn speed value, and a target angle value.
+    --They never travel within a certain distance of the edge of the screen
+
+  Bouncy Dancers
+    --Moves in a straight line, bouncing off the edges of the screen and other bouncy dancers
+      --Maybe have them change color when they bounce?
+
+  Gravity Bouncy Dancers
+    --Like Bouncy Dancers, but with gravity that attracts them to the bottom of the screen
+
+  Fishy Dancers
+    --Like Wander Dancers, but they like to flock (school) with other Fishy Dancers of the same color
+      --Could Implement FishyDancer Colors with subclasses?
+      --Scared of Shark Dancers, will speed up when fleeing a shark dancer
+
+  Shark Dancers
+    --Like Fishy Dancers, but Non-shark Fishy dancers will turn away to avoid them.
+    --Could also randomly or on click become "agressive" and chase the nearest fishy dancer?
+      --Implement eating fish?
+
+  Shy Dancer
+    --Rapidly changes color and moves in a small area, super excitable!
+      --Hovering the Shy Dancer makes it shrink, shrinks its movement range very much so that it almost vibrates, and turns it a dark grey
+
+
+Implementation Ideas
+  Global Settings Object
+    --"Framerate" variable
+    --Playback speed value
+    --Backgrounds
