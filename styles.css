@@ -28,3 +28,7 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.bouncy{
+  border:25px solid orange;
+  border-radius: 25px;
+}
