@@ -16,6 +16,15 @@ var Dancer = function(top, left, timeBetweenSteps) {
 
   //display span
   this.$node = $('<span class="dancer"></span>');
+
+  this.$node.mouseenter(function() {
+
+    $(this).addClass('hoveredDancer');
+
+  }).mouseout(function() {
+    console.log('mouseout');
+    $(this).removeClass('hoveredDancer');
+  });
 };
 
 //methods

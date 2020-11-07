@@ -34,3 +34,6 @@ body, a:link, a:visited, a:active{
   border:25px solid orange;
   border-radius: 25px;
 }
+.hoveredDancer{
+  border:25px solid green;
+}
