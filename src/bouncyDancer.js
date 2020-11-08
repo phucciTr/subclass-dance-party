@@ -111,10 +111,10 @@ BouncyDancer.prototype.move = function() {
   this.top += this.topSpeed;
   this.left += this.leftSpeed;
 };
-BouncyDancer.prototype.step = function() {
+BouncyDancer.prototype.step = function() { 
   this.move();
   this.setPosition(this.top, this.left);
-  this.detectBounce(); 
+  this.detectBounce();
 };
 
 //values
