@@ -114,8 +114,8 @@ BouncyDancer.prototype.move = function() {
 BouncyDancer.prototype.step = function() {
   this.move();
   this.setPosition(this.top, this.left);
-  this.detectBounce();
-}; 
+  this.detectBounce(); 
+};
 
 //values
 BouncyDancer.prototype.allBouncyDancers = [];
