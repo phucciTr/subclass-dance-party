@@ -1,6 +1,24 @@
 /* eslint-disable quotes */
 $(document).ready(function() {
   window.dancers = [];
+  window.dancing = true;
+
+  window.startAll = function() {
+    window.dancing = true;
+    for (let i = 0; i < window.dancers.length; i++) {
+      if (window.dancers[i].dancing === false) {
+        window.dancers[i].startDancing();
+      }
+    }
+  };
+
+  $('#lineup').on('click', function(event) {
+    window.dancing = !window.dancing;
+    console.log(window.dancing);
+    for (let i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].lineUp(i, window.dancers.length);
+    }
+  });
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -30,5 +48,9 @@ $(document).ready(function() {
     );
     //console.log(dancer);
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+    window.startAll();
   });
+
+
 });
