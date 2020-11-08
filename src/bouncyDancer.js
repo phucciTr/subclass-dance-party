@@ -57,7 +57,7 @@ var BouncyDancer = function(top, left, timeBetweenSteps) {
   this.$node.addClass('bouncy');
 
   //edgecase
-  if (this.top > this.topRange - this.radius * 2) { 
+  if (this.top > this.topRange - this.radius * 2) {
     this.top -= this.radius * 2;
   }
   if (this.left > this.leftRange - this.radius * 2) {
@@ -115,7 +115,7 @@ BouncyDancer.prototype.step = function() {
   this.move();
   this.setPosition(this.top, this.left);
   this.detectBounce();
-};
+}; 
 
 //values
 BouncyDancer.prototype.allBouncyDancers = [];
