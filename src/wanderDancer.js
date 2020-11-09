@@ -55,11 +55,11 @@ WanderDancer.prototype.step = function() {
     this.turn();
   }
 
-  this.top = this.top + this.speed * Math.sin(this.currentAngle * Math.PI / 180);
+  this.top = this.top + this.speed * Math.sin(this.currentAngle * Math.PI / 180); 
   this.left = this.left + this.speed * Math.cos(this.currentAngle * Math.PI / 180);
   this.setPosition(this.top, this.left);
   this.teleport();
-  this.turn(); 
+  this.turn();
 };
 
 WanderDancer.prototype.teleport = function() {
